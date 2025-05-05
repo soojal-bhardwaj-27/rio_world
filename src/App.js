@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
 import ResumeBuilder from './components/ResumeBuilder';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -16,6 +18,8 @@ function App() {
         <Navbar />
         <div className="pt-16">
           <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/" element={<Home />} />
             <Route path="/builder" element={<ResumeBuilder />} />
             <Route path="/interview-prep" element={<InterviewPrep />} />

@@ -4,17 +4,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#2563eb',
-        secondary: '#475569',
-      },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
 }
 
